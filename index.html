@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Melody</title>
+    <meta name = "viewport" content = "width = device-width">
+
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3ac768d8-7a5c-4fd8-b377-f61d7f1760fa.css"/>
+    <link type="text/css" rel="stylesheet" href="resources/main.css" />
+  </head>
+
+  <body>
+    <h1>Melody</h1>
+    <!--<div class="links">-->
+      <!--<a href="https://youtu.be/jB219tQWjEg">Video of Mary livecoding the drum machine</a>&nbsp;-->
+      <!--<a href="/docs/drum-machine.html">Annotated source</a>&nbsp;-->
+      <!--<a href="https://github.com/maryrosecook/drum-machine">GitHub</a>-->
+    <!--</div>-->
+    <hr/>
+
+    <p>
+      A simple melody writer that runs in the browser.
+        <br/>
+        Inspired by Mary Rose Cook's Drum Machine.
+    </p>
+
+    <h2>Demo</h2>
+
+    <div id="mobile-demo" style="display: none;">
+      <p>
+        Below is just a screenshot of the drum machine.  The code
+        doesn't work in mobile browsers.  To play with the demo, visit
+        this site on a desktop or laptop computer.
+      </p>
+
+      <img src="/screenshot.gif" width="100%">
+    </div>
+
+    <div id="desktop-demo">
+      <p>
+        Click the buttons to turn the notes on or off.
+      </p>
+
+      <!-- Canvas element where the drum machine is drawn -->
+      <canvas id="screen" width="637px" height="286px"></canvas>
+
+      <!-- Load the code that runs the drum machine -->
+      <script src="melody.js"></script>
+    </div>
+
+   </body>
+</html>
