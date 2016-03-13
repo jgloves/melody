@@ -17,8 +17,8 @@ var data = {
            createTrack("green", note(audio, 523.25)),//C5
            createTrack("gold", note(audio, 493.88)), //B4
            createTrack("orange", note(audio, 440)), //A4
-           createTrack("red", note(audio, 392)), //G4
-           createTrack("dodgerblue", kick(audio))]//kick
+           createTrack("red", note(audio, 392))] //G4
+           //createTrack("dodgerblue", kick(audio))]//kick
 };
 
 // Update
