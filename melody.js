@@ -11,8 +11,8 @@ var data = {
   // `tracks` holds the nine tracks of the melody.  Each track
   // has a note and sixteen steps (or beats).
   tracks: [createTrack("indigo", note(audio, 392*2)),//G5
-           createTrack("indigo", note(audio, 739.99)),//F#5
-           createTrack("purple", note(audio, 659.25)),//E5
+           createTrack("purple", note(audio, 739.99)),//F#5
+           createTrack("blue", note(audio, 659.25)),//E5
            createTrack("dodgerblue", note(audio, 587.33)),//D5
            createTrack("green", note(audio, 523.25)),//C5
            createTrack("gold", note(audio, 493.88)), //B4
@@ -57,7 +57,7 @@ var screen = document.getElementById("screen").getContext("2d");
   drawTracks(screen, data);
 
   // Draw the pink square that indicates the current step (beat).
-  drawButton(screen, data.step, data.tracks.length, "deeppink");
+  drawButton(screen, data.step, data.tracks.length, "black"); //deeppink
 
   // Ask the browser to call `draw()` again in the near future.
   requestAnimationFrame(draw);
